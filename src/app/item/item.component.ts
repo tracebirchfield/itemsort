@@ -9,20 +9,9 @@ import { Item } from '../shared/model/Item';
 })
 export class ItemComponent implements OnInit {
   @Input() item: Item = new Item();
-  @Output() countUpdate = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit(): void { }
-
-  increment() {
-    this.item.count++;
-    this.countUpdate.emit();
-  }
-
-  decrement() {
-    this.item.count--;
-    this.countUpdate.emit();
-  }
 
 }

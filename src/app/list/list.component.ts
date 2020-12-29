@@ -19,8 +19,4 @@ export class ListComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  sort() {
-    this.items.sort((a, b) => a.count < b.count ? 1 : (a.count > b.count ? -1 : (a.name > b.name ? 1 : -1)));
-  }
-
 }
